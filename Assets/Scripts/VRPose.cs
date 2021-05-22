@@ -18,13 +18,27 @@ public class VRPose : MonoBehaviour
     public InputActionReference positionAction;
     public InputActionReference rotationAction;
 
+    // Boolean 'bool' is a true or false value, in this case, telling us
+    // if we have setup, meaning we can run
+    private bool isSetup = false;
+
+    public void Setup()
+    {
+        // We are now setup and we can start running
+        isSetup = true;
+    }
+
     // This function is called every fixed framerate frame, if the MonoBehaviour is enabled
     private void FixedUpdate()
     {
-        // Apply the calculated pose to this object in the scene
-        PoseTransform pose = GetPose();
-        transform.position = pose.position;
-        transform.rotation = pose.rotation;
+        // If we aren't setup, we can't actually update the transform of the VR Object
+        if (isSetup)
+        {
+            // Apply the calculated pose to this object in the scene
+            PoseTransform pose = GetPose();
+            transform.position = pose.position;
+            transform.rotation = pose.rotation; 
+        }
     }
 
     // This gets the rotation and position data from the InputActions

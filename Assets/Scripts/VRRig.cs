@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class VRRig : MonoBehaviour
 {
+    public VRController left;
+    public VRController right;
+    public VRPose HMD;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        // We tell the HMD to run and setup.
+        HMD.Setup();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Setup the controllers
+        left.Setup();
+        right.Setup();
     }
 }

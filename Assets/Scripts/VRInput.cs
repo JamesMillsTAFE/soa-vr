@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class VRInput : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool isSetup = false;
 
-    // Update is called once per frame
-    void Update()
+    public void Setup()
     {
-        
+        // We are now ready to run
+        isSetup = true;
+
+        // Setup the input detection here
     }
 }

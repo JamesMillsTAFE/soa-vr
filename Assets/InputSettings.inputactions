@@ -382,6 +382,38 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "LeftVelocity",
+                    "type": "Value",
+                    "id": "eff5c683-b1a8-4878-9145-885f8f6b7103",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftAngularVelocity",
+                    "type": "Value",
+                    "id": "d87a38e5-5b67-4024-a137-be0926035b04",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightVelocity",
+                    "type": "Value",
+                    "id": "a9ff7771-16e3-4edd-a66d-4baf16e90c83",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightAngularVelocity",
+                    "type": "Value",
+                    "id": "9c2bdc52-5ec7-4d40-b55e-e22fb18bca9c",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -470,6 +502,50 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e20b498-9b3a-4008-9ad9-6b0ffd70e891",
+                    "path": "<XRController>{LeftHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c353c912-f392-4a6d-9e1f-f80d9894e066",
+                    "path": "<XRController>{LeftHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftAngularVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a1bfdc7-69ab-4265-9731-896d50c4ccf5",
+                    "path": "<XRController>{RightHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "63436020-1f5a-4ad8-928c-12fb91ff3c28",
+                    "path": "<XRController>{RightHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightAngularVelocity",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

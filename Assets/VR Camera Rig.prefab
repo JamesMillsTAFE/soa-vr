@@ -172,6 +172,8 @@ GameObject:
   - component: {fileID: 1908226933515834905}
   - component: {fileID: 1908226933515834904}
   - component: {fileID: 1908226933515834911}
+  - component: {fileID: 8410369311744113545}
+  - component: {fileID: 4829221226040100919}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -269,6 +271,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positionAction: {fileID: -4267168903051570099, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
   rotationAction: {fileID: 4934506321100405155, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
+--- !u!114 &8410369311744113545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908226933515834906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffbc46077be925945bdbc7e4d2846efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4829221226040100919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908226933515834906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d39d839bf40b3e43b9c45f2e9cdc4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAction: {fileID: -3418300096678880177, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
+  angularVelocityAction: {fileID: -2851981875973387882, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
+  velocity: {x: 0, y: 0, z: 0}
+  angularVelocity: {x: 0, y: 0, z: 0}
+  input: {fileID: 0}
+  pose: {fileID: 0}
 --- !u!1 &1908226934058038979
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +314,8 @@ GameObject:
   - component: {fileID: 1908226934058038982}
   - component: {fileID: 1908226934058038977}
   - component: {fileID: 1908226934058038980}
+  - component: {fileID: 4072114052969409657}
+  - component: {fileID: 8803603136240502996}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -379,6 +413,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positionAction: {fileID: -8610863109147512901, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
   rotationAction: {fileID: 5248716613819703059, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
+--- !u!114 &4072114052969409657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908226934058038979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffbc46077be925945bdbc7e4d2846efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8803603136240502996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908226934058038979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d39d839bf40b3e43b9c45f2e9cdc4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAction: {fileID: 5823718137709075681, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
+  angularVelocityAction: {fileID: -8415231083299574932, guid: f6bfc75cf371cfd4da1f0a2b4467459b, type: 3}
+  velocity: {x: 0, y: 0, z: 0}
+  angularVelocity: {x: 0, y: 0, z: 0}
+  input: {fileID: 0}
+  pose: {fileID: 0}
 --- !u!1 &1908226934450821344
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,3 +490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b66f7c6a6ef0c4a8215ff5079b66d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: {fileID: 4829221226040100919}
+  right: {fileID: 8803603136240502996}
+  HMD: {fileID: 1908226933078608814}
