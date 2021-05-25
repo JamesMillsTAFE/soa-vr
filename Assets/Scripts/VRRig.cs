@@ -9,7 +9,7 @@ public class VRRig : MonoBehaviour
     public VRPose HMD;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // We tell the HMD to run and setup.
         HMD.Setup();
