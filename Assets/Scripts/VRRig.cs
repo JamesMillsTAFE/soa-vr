@@ -7,6 +7,7 @@ public class VRRig : MonoBehaviour
     public VRController left;
     public VRController right;
     public VRPose HMD;
+    public Transform PlayArea;
 
     // Start is called before the first frame update
     void Awake()

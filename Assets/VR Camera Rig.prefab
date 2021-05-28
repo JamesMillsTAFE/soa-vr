@@ -283,6 +283,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffbc46077be925945bdbc7e4d2846efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grab: {fileID: 0}
+  teleport: {fileID: 0}
+  onGrabPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabReleased:
+    m_PersistentCalls:
+      m_Calls: []
+  onTeleported:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4829221226040100919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +436,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffbc46077be925945bdbc7e4d2846efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grab: {fileID: 0}
+  teleport: {fileID: 0}
+  onGrabPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabReleased:
+    m_PersistentCalls:
+      m_Calls: []
+  onTeleported:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8803603136240502996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,3 +515,4 @@ MonoBehaviour:
   left: {fileID: 4829221226040100919}
   right: {fileID: 8803603136240502996}
   HMD: {fileID: 1908226933078608814}
+  PlayArea: {fileID: 1908226934450821350}

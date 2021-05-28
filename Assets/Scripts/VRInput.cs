@@ -6,13 +6,16 @@ using UnityEngine.InputSystem;
 
 public class VRInput : MonoBehaviour
 {
+    [System.Serializable]
+    public class TeleportEvent : UnityEvent<Vector3> {}
+    
     public InputActionReference grab;
     public InputActionReference teleport;
 
     public UnityEvent onGrabPressed = new UnityEvent();
     public UnityEvent onGrabReleased = new UnityEvent();
 
-    public UnityEvent onTeleported = new UnityEvent();
+    public TeleportEvent onTeleported = new TeleportEvent();
 
     private bool isSetup = false;
 
@@ -39,6 +42,9 @@ public class VRInput : MonoBehaviour
 
     private void OnTeleportPerformed(InputAction.CallbackContext _context)
     {
-        onTeleported.Invoke();
+        if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
+        {
+            onTeleported.Invoke(hit.point);
+        }
     }
 }
